@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :shows
 
+  post 'shows/:id/book' => 'shows#book'
+
 	root 'home#index'
 	
   get 'home/index'
